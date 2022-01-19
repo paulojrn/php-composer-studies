@@ -1,0 +1,16 @@
+{
+    "name": "paulojrn/buscador-cursos",
+    "description": "Projeto de busca de cursos no site da alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Paulo JRN",
+            "email": "paulo.xcco@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "symfony/dom-crawler": "^6.0",
+        "symfony/css-selector": "^6.0"
+    }
+}
