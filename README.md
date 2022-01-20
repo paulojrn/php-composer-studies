@@ -7,3 +7,4 @@
 05. docker run --rm --interactive --tty --volume $PWD:/app composer require symfony/dom-crawler
 06. docker run --rm --interactive --tty --volume $PWD:/app composer require symfony/css-selector
 07. docker run --rm --interactive --tty --volume $PWD:/var/www/html --workdir=/var/www/html/ php php init.php
+08. docker run --rm --interactive --tty --volume $PWD:/app composer dump-autoload
