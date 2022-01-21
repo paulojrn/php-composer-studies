@@ -59,7 +59,10 @@ class Tracker
         return $courses;
     }
 
-    public function show()
+    /**
+     * @return void
+     */
+    public function show(): void
     {
         if (empty($this->courses)) {
             echo "Sem cursos a serem mostrados";
