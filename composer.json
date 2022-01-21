@@ -41,5 +41,7 @@
     },
     "scripts-descriptions": {
         "check": "Roda as verificações dos códigos: test, cs, phan"
-    }
+    },
+    "license": "GPL-3.0",
+    "bin": ["buscador-cursos.php"]
 }

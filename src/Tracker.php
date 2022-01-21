@@ -21,12 +21,18 @@ class Tracker
     private Crawler $crawler;
 
     /**
+     * @var array
+     */
+    private array $courses;
+
+    /**
      * Contructor
      */
     public function __construct(ClientInterface $httpClient, Crawler $crawler)
     {
         $this->httpClient = $httpClient;
         $this->crawler = $crawler;
+        $this->courses = [];
     }
 
     /**
@@ -48,6 +54,19 @@ class Tracker
             $courses[] = $element->textContent;
         }
 
+        $this->courses = $courses;
+
         return $courses;
+    }
+
+    public function show()
+    {
+        if (empty($this->courses)) {
+            echo "Sem cursos a serem mostrados";
+        }
+
+        foreach($this->courses as $course) {
+            echo $course . PHP_EOL;
+        }
     }
 }

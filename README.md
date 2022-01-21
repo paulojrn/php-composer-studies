@@ -21,3 +21,4 @@
 19. docker run --rm --interactive --tty --volume $PWD:/var/www/html --workdir=/var/www/html/ php php vendor/bin/phan --allow-polyfill-parser src/Tracker.php
 20. Após a criação do arquivo .phan/config.php: docker run --rm --interactive --tty --volume $PWD:/var/www/html --workdir=/var/www/html/ php php vendor/bin/phan --allow-polyfill-parser
 21. https://getcomposer.org/doc/articles/scripts.md
+22. git tag -a v1.0.0 -> git push origin v.1.0.0

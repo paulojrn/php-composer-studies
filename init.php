@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 require "vendor/autoload.php";
@@ -12,8 +13,5 @@ $client = new Client([
 $crawler = new Crawler();
 
 $tracker = new Tracker($client, $crawler);
-$courses = $tracker->search("/cursos-online-programacao/php");
-
-foreach ($courses as $course) {
-    echo $course . PHP_EOL;
-}
+$tracker->search("/cursos-online-programacao/php");
+$tracker->show();
