@@ -20,4 +20,4 @@
 18. docker run --rm --interactive --tty --volume $PWD:/var/www/html --workdir=/var/www/html/ php php vendor/bin/phan --help
 19. docker run --rm --interactive --tty --volume $PWD:/var/www/html --workdir=/var/www/html/ php php vendor/bin/phan --allow-polyfill-parser src/Tracker.php
 20. Após a criação do arquivo .phan/config.php: docker run --rm --interactive --tty --volume $PWD:/var/www/html --workdir=/var/www/html/ php php vendor/bin/phan --allow-polyfill-parser
-21. docker run --rm --interactive --tty --volume $PWD:/app composer test
+21. https://getcomposer.org/doc/articles/scripts.md
